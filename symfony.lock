@@ -1,7 +1,4 @@
 {
-    "behat/transliterator": {
-        "version": "v1.2.0"
-    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -369,10 +366,16 @@
             "tests/.gitignore"
         ]
     },
+    "symfony/polyfill-intl-grapheme": {
+        "version": "v1.13.1"
+    },
     "symfony/polyfill-intl-icu": {
         "version": "v1.13.1"
     },
     "symfony/polyfill-intl-idn": {
+        "version": "v1.13.1"
+    },
+    "symfony/polyfill-intl-normalizer": {
         "version": "v1.13.1"
     },
     "symfony/polyfill-mbstring": {
@@ -446,8 +449,8 @@
     "symfony/stopwatch": {
         "version": "v4.4.1"
     },
-    "symfony/templating": {
-        "version": "v4.4.2"
+    "symfony/string": {
+        "version": "v5.0.4"
     },
     "symfony/test-pack": {
         "version": "v1.0.6"
