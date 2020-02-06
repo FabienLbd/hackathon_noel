@@ -28,10 +28,10 @@
         "symfony/web-link": "4.4.*",
         "symfony/webpack-encore-bundle": "^1.7",
         "symfony/yaml": "4.4.*",
-        "vich/uploader-bundle": "^1.12"
+        "vich/uploader-bundle": "^1.12",
+        "doctrine/doctrine-fixtures-bundle": "^3.3"
     },
     "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "^3.3",
         "fzaninotto/faker": "^1.9",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
@@ -74,7 +74,9 @@
             "@auto-scripts"
         ],
         "compile": [
-            "php bin/console doctrine:schema:update --force"
+            "php bin/console doctrine:schema:update --force",
+            "php bin/console doctrine:fixtures:load --no-interaction --env=PROD"
+
         ]
     },
     "conflict": {
